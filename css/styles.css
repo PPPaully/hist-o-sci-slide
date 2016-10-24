@@ -1,0 +1,352 @@
+/* custom template */
+html, body {
+   height: 100%;
+   font-family: Helvetica, Arial, sans-serif;
+   color:#555555;
+}
+
+.nav {
+   font-family:Arial,sans-serif;
+   font-size:13px;
+}
+
+a {
+  color:#222222;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.column .padding {
+    padding: 20px;
+}
+
+.box {
+  	bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.divider {
+    display: inline-block;
+    width: 0;
+    height: 1.5em;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 13px;
+    padding-right: 8px;
+    margin-left: 8px;
+}
+
+.fb-container {
+    width: 976px;
+    margin: auto;
+}
+
+.navbar-blue {
+    background-color: #3b5998;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    font-family:arial,sans-serif;
+    width: 100%;
+    top:0;
+    position:fixed;
+}
+.navbar-blue li > a,.navbar-toggle  { color:#efefef; }
+.navbar-blue li>a:hover { background-color:#2A4888; color:#fff;}
+.navbar-blue li>a:focus { background-color: #3b5998; }
+
+#main {
+   background-color:#e9eaed;
+   padding-left:0;
+   padding-right:0;
+}
+
+.logo {
+    display:block;
+    padding-left: 3px;
+    padding-top: 12px;
+    background-color:#fff;
+    color:#3B5999;
+    height:28px;
+    width:28px;
+    margin-top:11px;
+    margin-right:2px;
+    border-radius:2px;
+    overflow: hidden;
+}
+
+.nav > li > a {
+    margin: 7px 0px 8px 0px;
+}
+.navbar-menu {
+    font-weight: bold;
+    padding-right: 25px;
+}
+.navbar-menu > li > a {
+    padding: 5px;
+}
+.navbar-icon > li > a {
+    padding: 3px;
+}
+.navbar-icon > li > a:hover {
+    background-color: inherit;
+}
+
+/* Color Theme */
+.blue { color: #5c92ff;}
+.green { color: #45d572;}
+.orange { color: #fea101;}
+.gray { color: #90949c;}
+.name {
+    color: #365899;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Facebook Theme */
+.fb-icon {
+    background-image: url('../assets/fb-icon.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 24px;
+    height: 24px;
+    opacity: .6;
+}
+.fb-friend-request {
+    background-position: 0 -188px;
+}
+.fb-message {
+    background-position: 0 -338px;
+}
+.fb-notification {
+    background-position: 0 -288px;
+}
+.fb-privacy {
+    background-position: 0 -860px;
+    margin-top: 4px;
+    width: 16px;
+    height: 16px
+}
+.fb-menu {
+    background-position: 0 -826px;
+    margin-top: 4px;
+    width: 16px;
+    height: 16px
+}
+
+.fb-blog {
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.fb-event {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.fb-event > div {
+    font-size: 20px;
+}
+
+.fb-post > .author {
+    margin-bottom: 11px;
+    padding: 12px 12px 0;
+}
+.fb-post > .author > .pic {
+    float: left;
+    margin-right: 8px;
+    height: 80px;
+    width: 80px;
+}
+.fb-post > .author > .title {
+    display: inline-block;
+    height: 100px;
+}
+.fb-post > .author > .title > .name {
+    font-size: 1.5em;
+}
+.fb-post > .author > .title > .since {
+    font-size: 1.2em;
+    color: #90949c;
+}
+.fb-post > .content {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    padding: 12px 12px 0;
+}
+.img-wrapper{
+    text-align: center;
+    min-width: 100%;
+    background-color: inherit;
+    display: block;
+}
+.fb-post > .reply-continer {
+    background-color: #f6f7f9;
+    border-top: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 0 0 3px 3px;
+    color: #1d2129;
+    overflow: visible;
+    width: auto;
+}
+.fb-post > .reply-continer > .reply {
+    padding: 12px;
+    font-size: 1.2em;
+}
+.fb-post > .reply-continer > .reply:last-child {
+    padding-bottom: 50px;
+}
+.fb-post > .reply-continer > .reply > .pic {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.fb-post > .reply-continer > .reply > .content {
+    margin-left: 60px;
+}
+.fb-post > .reply-continer > .reply > .content > .name {
+    display: inline-block;
+}
+.fb-post > .reply-continer > .reply > .content > .text {
+    display: flex;
+}
+
+.fb-search-form {
+    background-color: #fff;
+    border: 1px solid #3b5998;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 29px;
+    margin-left: 6px;
+    margin-top: 2px;
+    min-width: 448px;
+    padding-left: 5px;
+    padding-right: 48px;
+    position: relative;
+    top: 8px;
+    width: auto;
+}
+.fb-search-form > .search-box {
+    border: none;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+.fb-search-form > .search-box:hover, .fb-search-form > .search-box:focus, .fb-search-form > .search-box:active {
+    border: none;
+    box-shadow: none;
+}
+.fb-search-form > .search-btn:hover {
+    background: #e9ebee;
+}
+.fb-search-form > .search-btn {
+    background: #f6f7f9;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+
+.fb-space {
+    height: 60px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid;
+    border-color: #d0d1d5;
+    text-align: center;
+}
+.fb-space * {
+    width: 50%;
+    margin: auto;
+    font-size: xx-large;
+    line-height: 120px;
+    background-color: #e9eaed;
+    color: rgba(195, 197, 199, 0.8);
+    text-shadow: 1px 4px 6px #e9eaed, 0 0 0 #000, 1px 4px 6px #def;
+}
+::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
+::selection { background: #5af; color: #fff; text-shadow: none; }
+
+/* Dropdown */
+.open > .dropdown-toggle.btn-default, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+    background: #4080ff;
+    color: #eee;
+}
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, .15);
+    border-radius: 2px;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, .10);
+}
+.dropdown-header {
+    padding: 5px 8px;
+    background-color: #e9eaed;
+    border-bottom: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    font-weight: bold;
+    color: #90949c;
+}
+.dropdown-menu > li a {
+    padding: 0;
+    height: 64px;
+    font-size: 1.2em;
+    color: #333;
+}
+.dropdown-menu > li a:hover {
+    color: #333;
+    background: #ecf0f7;
+}
+.dropdown-menu > li .search-icon, .dropdown-menu > li img {
+    float: left;
+    margin: 13px 10px 0 8px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+}
+.dropdown-menu > li span {
+    line-height: 64px;
+    padding-left: 10px;
+}
