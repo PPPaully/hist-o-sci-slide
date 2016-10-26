@@ -210,6 +210,10 @@ a:hover {
     background-color: inherit;
     display: block;
 }
+.img-wrapper > img{
+    text-align: center;
+    max-width: 100%;
+}
 .fb-post > .reply-continer {
     background-color: #f6f7f9;
     border-top: 1px solid;
